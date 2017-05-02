@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body {
+  /*background-color:#FFFBED;*/
+    color: #333;
+    font-size:16px;
+}
+
+.revealOnScroll { opacity: 0; }
+
+.grad {
+  background: #FFFBED; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FFFBED, #007679); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FFFBED, #007679); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FFFBED, #007679); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FFFBED, #007679); /* Standard syntax */
+}
+
+
+.grad small {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.collapsible-body {
+  text-align:left;
+}
+
+.skills {
+  width:100px;
+  border-radius:50%;
+}
+
+.skill-panel {
+  margin:25px 0;
+}
+
+.skill-panel p {
+  display:inline-block;
+  vertical-align: top;
+  text-align:left;
+}
+
+
+.boldest {
+  font-size: 55pt;
+
+}
+
+.banded {
+  background-color: white;
+  /*color: #fafafa;*/
+  padding: 75px;
+}
+
+
+.banded h5 {
+  margin-top:0;
+}
+
+.banded hr {
+  margin-top:35px;
+  margin-bottom:35px;
+  border: 1px dotted #eee;
+}
+
+.contact-banded {
+  padding: 75px 75px 35px;
+}
+
+.banded-top {
+  background-color:white;
+  padding:75px;
+}
+
+.banded-top img {
+  /*max-width:70px;*/
+  margin-bottom:25px;
+}
+
+.padded {
+  padding-top: 5vh;
+  padding-bottom: 27vh;
+}
+
+.top {
+  padding-top: 27vh;
+  padding-bottom: 30vh;
+}
+
+.bot {
+  padding-bottom:100px;
+}
+
+.fa-2x {
+  padding: 0 5px;
+
+}
+.btn-1 {
+  margin-top:30px;
+}
+
+
+
+.collapsible.popout>li {
+  margin-left: 0;
+  margin-right: 0;
+}
