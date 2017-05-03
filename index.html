@@ -12,60 +12,132 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="grad" ng-app="app" ng-controller="mainCtrl">
-    <div class="container">
-        <div class="row top revealOnScroll">
+<body id="top" class="grad" ng-app="app" ng-controller="mainCtrl">
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper blue-grey darken-4">
+     <a ng-click="gotoLocation('top')" class="brand-logo">vm</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a ng-click="gotoLocation('work')">Work</a></li>
+        <li><a ng-click="gotoLocation('skills')">Skills</a></li>
+        <li><a ng-click="gotoLocation('contact')">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+    <div id="scrollArea" class="container">
+
+
+      <!-- <div id="quote" >
+        <p class="flow-text left-align">"The precise role of the artist, then, is to illuminate that darkness, blaze roads through that vast forest, so that we will not, in all our doing, lose sight of its purpose, which is, after all, to make the world a more human dwelling place."</p>
+      </div> -->
+
+        <div class="row top">
+
+
+          <ul id="slide-out" class="side-nav">
+            <li><a ng-click="gotoLocation('top')">Home</a></li>
+            <li><a ng-click="gotoLocation('work')">Work</a></li>
+            <li><a ng-click="gotoLocation('skills')">Skills</a></li>
+            <li><a ng-click="gotoLocation('contact')">Contact</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Follow Me</a></li>
+            <li class="social"><a href="https://www.linkedin.com/in/vernon-mullen-ii-3769304" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <a href="http://www.github.com/vernonmu" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="http://www.twitter.com/mullen_vernon" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          </ul>
             <div class="col s12 center-align">
                 <div class="card banded-top">
                     <h1>
-                      <span class="boldest">Vernon Mullen</span>
+                      <span class="boldest flow-text">Vernon Mullen</span>
                     </h1>
-                    <h5>Dallas native, full stack web developer highly trained <br>in the Tao of UI / UX.</h5>
+                    <h5 class="flow-text">Dallas native, full stack web developer highly trained <br>in the Tao of UI / UX.</h5>
                     <a class="waves-effect waves-light btn btn-1" target="_blank" href="https://github.com/vernonmu"><i class="material-icons left">list</i>view my code</a>
                 </div>
             </div>
         </div>
-        <div class="row padded revealOnScroll">
+
+
+        <div id="work" class="row padded revealOnScroll">
             <div class="col s12 center-align">
                 <div class="card banded">
                     <h3>Projects</h3>
                     <div class="row">
-                      <div class="col m3">
+                      <div class="col m3 screen">
                         <img src="/img/tqkit-screen4.png" alt="TQKIT App screenshot" class="materialboxed responsive-img">
+
                       </div>
                       <div class="col m9 left-align">
                         <h5>TQKIT CRM</h5>
-                        <p>Client Management tool and work ticket system to faciliate project oversight. Component based architecture, Local Authorization, Gulp Build, Bootstrap</p>
+                        <p class="flow-text">Client Management tool and work ticket system to faciliate project oversight. Component based architecture, Local Authorization, Gulp Build, Bootstrap</p>
+                        <a href="http://tqkit.com" target="_blank" class="orange darken-1 waves-effect waves-light btn">visit app</a>
                       </div>
                     </div>
                     <hr>
                     <div class="row">
-                      <div class="col m3">
-                        <img src="/img/rep-screen2.png" alt="TQKIT App screenshot" class="materialboxed responsive-img">
+                      <div class="col m3 screen">
+                        <img src="/img/rep-screen2.png" alt="Represent App screenshot" class="materialboxed responsive-img">
+
                       </div>
                       <div class="col m9 left-align">
                         <h5>REPRESENT</h5>
-                        <p>Find your local, state, and federal representatives by entering your address. AngularJS, Express, Node, Materialize</p>
+                        <p class="flow-text">Find your local, state, and federal representatives by entering your address. AngularJS, Express, Node, Materialize</p>
+                          <a href="http://rep.tqkit.com" target="_blank" class="orange darken-1 waves-effect waves-light btn">visit app</a>
                       </div>
                     </div>
                     <hr>
                     <div class="row">
-                      <div class="col m3">
-                        <img src="/img/skema-screen1.png" alt="TQKIT App screenshot" class="materialboxed responsive-img">
+                      <div class="col m3 screen">
+                        <img src="/img/skema-screen1.png" alt="Skema App screenshot" class="materialboxed responsive-img">
+                        <!-- <a href="http://tqkit.com" target="_blank" class="orange darken-2 waves-effect waves-light btn">visit app</a> -->
                       </div>
                       <div class="col m9 left-align">
                         <h5>SKEMA</h5>
-                        <p>Scheduling app for service businesses. ReactJS, NodeJS, ExpressJS, Postgres. Notes: Facebook Authorization, Collaborated with three developers, Component based
-</p>
+                        <p class="flow-text">Scheduling app for service businesses. ReactJS, NodeJS, ExpressJS, Postgres. Notes: Facebook Authorization, Collaborated with three developers, Component based
+                        </p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col s12 left-align uxui">
+                        <h5 style="margin-bottom:0;">User Experience & User Interface</h5>
+
+                        <p style="margin-top:0;">I developed and designed the following sites:</p>
+
+                        <div class="row">
+                          <div class="col m6 s12">
+                            <img src="/img/gfgroup-screen.jpg" alt="Global Fuels screen of website" class="responsive-img thumb materialboxed">
+                            <span>Global Fuels | 2017 - <a href="http://www.vernonmullen.com/gfgroup" target="_blank">visit demo</a></span>
+                          </div>
+
+                          <div class="col m6 s12">
+                              <img src="/img/jesuitscreen.jpg" alt="Jesuit Dallas High School site" class="responsive-img thumb materialboxed">
+                              <span>Jesuit Dallas | 2015 - <a href="http://www.jesuitcp.org" target="_blank">jesuitcp.org</a></span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col m6 s12">
+                              <img src="/img/stesite-thumb.jpg" alt="St Elizabeth Catholic School site" class="responsive-img thumb materialboxed">
+                              <span>St. Elizabeth School | 2016 - <a href="http://www.saintspride.com" target="_blank">saintspride.com</a></span>
+                          </div>
+
+                          <div class="col m6 s12">
+                            <img src="/img/brevetech-screen.jpg" alt="Breve Tech screenshot of website" class="responsive-img thumb materialboxed">
+                            <span>Breve Tech | 2016 - <a href="http://www.brevetech.com" target="_blank">brevetech.com</a></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row padded revealOnScroll">
+        <div id="skills" class="row padded revealOnScroll">
           <skills></skills>
         </div>
-        <div class="row padded revealOnScroll bot">
+        <div id="contact" class="row padded revealOnScroll bot">
             <div class="col s12 center-align">
                 <div class="card contact-banded">
                     <h3>Let's Connect</h3>
@@ -74,7 +146,7 @@
                             <img src="/img/selfie.jpg" class="responsive-img circle" alt="">
                         </div>
                         <div class="col m9 left-align">
-                            <p style="margin-bottom:30px;">Follow me with the links below. And, please let me know if I can help you or your team with any of your current or upcoming projects! <br></p>
+                            <p class="flow-text" style="margin-bottom:30px;">Follow me with the links below. And, please let me know if I can help you or your team with any of your current or upcoming projects! <br></p>
                             <div class="left-align">
                                 <a href="mailto:vernonmu@gmail.com" class="waves-effect waves-light btn"><i class="material-icons left">email</i>Email Me</a>
                             </div>

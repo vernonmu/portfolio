@@ -20,6 +20,19 @@ body {
   background: linear-gradient(to bottom right, #FFFBED, #007679); /* Standard syntax */
 }
 
+.uxui span {
+  line-height:1.6;
+  font-weight:300;
+  font-size:.85em;
+  text-align: center;
+  display:block;
+
+}
+
+img.thumb {
+  margin-bottom:15px;
+}
+
 
 .grad small {
   margin-left: auto;
@@ -39,6 +52,7 @@ body {
   margin:25px 0;
 }
 
+
 .skill-panel p {
   display:inline-block;
   vertical-align: top;
@@ -47,19 +61,20 @@ body {
 
 
 .boldest {
-  font-size: 55pt;
-
+  font-size: 45pt;
 }
 
 .banded {
   background-color: white;
   /*color: #fafafa;*/
-  padding: 75px;
+  padding: 40px 75px;
 }
 
 
 .banded h5 {
   margin-top:0;
+  margin-bottom: 25px;
+
 }
 
 .banded hr {
@@ -88,8 +103,20 @@ body {
 }
 
 .top {
-  padding-top: 27vh;
+  padding-top: 10vh;
   padding-bottom: 30vh;
+}
+
+.brand-logo {
+  margin-left:25px;
+}
+
+.side-nav {
+  padding-top:10vh;
+}
+
+.side-nav li {
+  margin-top:2vh;
 }
 
 .bot {
@@ -104,9 +131,73 @@ body {
   margin-top:30px;
 }
 
+.side-nav .social a {
+  height:auto;
+}
+/*#quote {
+  box-sizing: border-box;
+  width:100%;
+  height:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 1000;
+  padding: 25vh;
 
+  background-color: rgba(255,255,255,0.9);
+  overflow:hidden;
+}*/
+
+.hide {
+  display:none;
+}
 
 .collapsible.popout>li {
   margin-left: 0;
   margin-right: 0;
+}
+
+.card h3 {
+  font-size:2em;
+}
+
+.card p {
+  line-height:1.6;
+  font-weight:300;
+}
+
+.screen a {
+  margin-top:25px;
+}
+
+@media screen and (max-width:992px) {
+  .brand-logo {
+    margin-left:0;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .banded h5 {
+    margin-top:25px;
+  }
+
+  .skill-panel {
+    display:block;
+    /*width:100%;*/
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .banded, .banded-top, .contact-banded {
+    padding:25px;
+  }
+
+  .contact-banded .left-align {
+    text-align: center;
+  }
+
+
+
 }

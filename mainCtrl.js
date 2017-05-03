@@ -1,5 +1,20 @@
-angular.module('app').controller('mainCtrl', function($scope, mainSrv){
+angular.module('app').controller('mainCtrl', function($scope, mainSrv, $location, $anchorScroll){
   console.log('Enjoy your stay.');
+
+
+
+  $scope.gotoLocation = function(loc) {
+     // set the location.hash to the id of
+     // the element you wish to scroll to.
+     $location.hash(loc);
+
+     // call $anchorScroll()
+     $anchorScroll();
+   };
+
+  $(".button-collapse").sideNav();
+
+
 
 
 
