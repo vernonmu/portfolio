@@ -9,19 +9,19 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="top" class="grad" ng-app="app" ng-controller="mainCtrl">
+<body class="grad" ng-app="app" ng-controller="mainCtrl">
 
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper blue-grey darken-4">
-     <a ng-click="gotoLocation('top')" class="brand-logo">vm</a>
+     <a href="#top" class="brand-logo" target="_self">vm</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a ng-click="gotoLocation('work')">Work</a></li>
-        <li><a ng-click="gotoLocation('skills')">Skills</a></li>
-        <li><a ng-click="gotoLocation('contact')">Contact</a></li>
+        <li><a href="#work" target="_self">Work</a></li>
+        <li><a href="#skills" target="_self">Skills</a></li>
+        <li><a href="#contact" target="_self">Contact</a></li>
       </ul>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -35,14 +35,14 @@
         <p class="flow-text left-align">"The precise role of the artist, then, is to illuminate that darkness, blaze roads through that vast forest, so that we will not, in all our doing, lose sight of its purpose, which is, after all, to make the world a more human dwelling place."</p>
       </div> -->
 
-        <div class="row top">
+        <div id="top" class="row top">
 
 
           <ul id="slide-out" class="side-nav">
-            <li><a ng-click="gotoLocation('top')">Home</a></li>
-            <li><a ng-click="gotoLocation('work')">Work</a></li>
-            <li><a ng-click="gotoLocation('skills')">Skills</a></li>
-            <li><a ng-click="gotoLocation('contact')">Contact</a></li>
+            <li><a href="#top" target="_self">Home</a></li>
+            <li><a href="#work" target="_self">Work</a></li>
+            <li><a href="#skills" target="_self">Skills</a></li>
+            <li><a href="#contact" target="_self">Contact</a></li>
             <li><div class="divider"></div></li>
             <li><a class="subheader">Follow Me</a></li>
             <li class="social"><a href="https://www.linkedin.com/in/vernon-mullen-ii-3769304" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
@@ -185,7 +185,6 @@
     </script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
